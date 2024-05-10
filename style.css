@@ -1,0 +1,363 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: white-space;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.menu__header > img{
+    height: 50%;
+}
+
+.menu__header{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 7px;
+}
+
+
+.menu__list{
+    display: none;  
+}
+
+
+/*Sección Title*/
+
+.title__container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title__bio{
+    display: flex;
+    margin-top: 3%;
+    font-size: 2.2rem;
+    padding: 47px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__subsection{
+    display: flex;
+    padding: 27px;
+    font-size: 1.8rem;
+    margin-left: 1%;
+    
+    justify-content: left;
+}
+
+.title__network{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    gap: 50px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.title__network img{
+    display: none;
+}
+
+
+.title__profile{
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+
+/*Sección About*/
+
+.about__title, .skills__title, .hobbies__title, .academic__title, .experience__section__title, .formcontato__title{
+    display: flex;
+    margin-top: 1%;
+    font-size: 30px;
+    padding: 47px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.about__paragraph{
+    display: flex;
+    padding: 27px;
+    font-size: 24px;
+    margin-left: 1%;
+    /* font-weight: bold; */
+    justify-content: left;
+    margin-bottom: 15px;
+}
+
+/*Sección Skills*/
+
+.skills{
+    background-color: #EAF2FD;
+    padding-bottom: 30px;
+}   
+ 
+
+.skills__line, .hobbies__line, .academic__courses{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 1.5rem;
+}    
+
+
+.skills__box, .hobbies__box{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+
+.skills__img{
+    margin: 5px;
+}
+
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+.academic{
+    background: #EAF2FD;
+    text-align: center;
+}
+
+.academic__courses__list img{
+    background: white;
+    padding: 12%;
+}
+
+.academic__courses__item__title{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.academic__courses__item__subtitle{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+/* experiencia*/
+
+.experiencie__box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.experiencie__box button, .formcontato__botao{
+    border-radius: 1rem;
+    margin: 5px;
+    padding: 5px;
+    width: 35%;
+    font-size: 1rem;
+}
+
+.experiencie__box img{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 1.45rem;
+}
+
+/*Contacto*/
+
+.formcontato__img{
+    display: none;
+}
+
+.formcontato{
+    display: flex;
+    background: #EAF2FD;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.formcontato__subtext {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.formcontato__subtext_2{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.formcontato__form input, textarea{
+    border-radius: 1rem;
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    font-size: 1rem;
+}
+
+/*footeer*/
+
+/* .footer{
+    text-align: center;
+} */
+
+.footer__rodape{
+
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    gap: 10px;
+    
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+/*> tablet >*/
+@media (min-width: 425px) {
+
+    /*Menu*/
+    
+    
+    /*Titulo*/
+    
+    /*Sección sobre mi*/
+    .title__profile{
+        float: inline-end;
+    }
+    
+    .academic__courses{
+        align-items: center;
+    }
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+     
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+     /*Contacto*/
+    
+    /*Footer*/
+    
+}
+
+
+/*Full HD 4k subtitulos en koreano uwu*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 30px;
+}
+
+.menu__header{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 7px;
+}
+
+.menu__header > img{
+    height: 80%;
+}
+
+
+/*title*/
+
+.title__bio{
+    display: flex;
+    margin-top: 3%;
+    font-size: 3.5rem;
+    padding: 47px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__network img{
+    display: inline;
+}
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+.formcontato{
+    justify-content: center;
+    text-align: center;
+}
+
+}
+
